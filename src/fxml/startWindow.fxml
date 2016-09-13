@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane fx:id="vistaHolder" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+          prefHeight="300.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+          fx:controller="controllers.startWindowController">
+   <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0"/>
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints/>
+      <RowConstraints maxHeight="95.0" minHeight="0.0" prefHeight="35.0" vgrow="SOMETIMES"/>
+      <RowConstraints maxHeight="198.0" minHeight="10.0" prefHeight="136.0" vgrow="SOMETIMES"/>
+      <RowConstraints maxHeight="174.0" minHeight="10.0" prefHeight="127.0" vgrow="SOMETIMES"/>
+   </rowConstraints>
+   <MenuBar prefHeight="60.0" prefWidth="320.0" GridPane.rowIndex="1">
+      <Menu mnemonicParsing="false" text="Menu">
+         <MenuItem mnemonicParsing="false" onAction="#exit" text="Exit"/>
+      </Menu>
+   </MenuBar>
+   <Button mnemonicParsing="false" onAction="#goToEduc" text="Learning" GridPane.halignment="CENTER"
+           GridPane.rowIndex="2" GridPane.valignment="CENTER">
+      <GridPane.margin>
+         <Insets top="50.0"/>
+      </GridPane.margin>
+   </Button>
+   <Button mnemonicParsing="false" onAction="#goToAuth" text="Authorization" GridPane.halignment="CENTER"
+           GridPane.rowIndex="3" GridPane.valignment="CENTER">
+      <GridPane.margin>
+         <Insets bottom="50.0"/>
+      </GridPane.margin>
+   </Button>
+</GridPane>
